@@ -235,10 +235,10 @@ class Program
         Perusahaan perusahaan = new Perusahaan();
 
         // --- Buat objek Karyawan ---
-        Manager manager   = new Manager("Budi Santoso", 15000000, 5000000);
-        Staff staff       = new Staff("Rina Marlina", 8000000, 2000000);
-        Magang magang     = new Magang("Dito Pratama", 1500000, 3);
-        Freelancer freelancer = new Freelancer("Sari Dewi", 5000000, 6);
+        Manager manager   = new Manager("Elmi Saputra", 15000000, 5000000);
+        Staff staff       = new Staff("Cristiano Ronaldo", 8000000, 2000000);
+        Magang magang     = new Magang("Lionel Messi", 1500000, 3);
+        Freelancer freelancer = new Freelancer("Kevin De Bruyne", 5000000, 6);
 
         // --- Tambahkan ke Perusahaan ---
         Console.WriteLine("\n=== MENAMBAHKAN KARYAWAN ===");
@@ -307,7 +307,7 @@ class Program
         // SOAL 5: Polymorphism — variabel Karyawan diisi objek Staff
         // -------------------------------------------------------
         Console.WriteLine("\n=== SOAL 5: Polymorphism — Karyawan berisi Staff ===");
-        Karyawan karyawanPolymorphism = new Staff("Agus Wijaya", 7000000, 1500000);
+        Karyawan karyawanPolymorphism = new Staff("Julian Alvarez", 7000000, 1500000);
         karyawanPolymorphism.Kerja();
         /*
          * JAWABAN SOAL 5:

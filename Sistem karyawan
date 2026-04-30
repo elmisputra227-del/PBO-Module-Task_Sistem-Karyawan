@@ -1,3 +1,4 @@
+//Console.WriteLine("Hello Word");
 using System;
 using System.Collections.Generic;
 
@@ -6,8 +7,8 @@ using System.Collections.Generic;
 // ============================================================
 class Karyawan
 {
-    public string Nama { get; set; }
-    public double Gaji { get; set; }
+    public string Nama;
+    public double Gaji;
 
     public Karyawan(string nama, double gaji)
     {
@@ -23,7 +24,7 @@ class Karyawan
     public virtual void InfoKaryawan()
     {
         Console.WriteLine($"Nama : {Nama}");
-        Console.WriteLine($"Gaji : Rp {Gaji:N0}");
+        Console.WriteLine($"Gaji : Rp {Gaji}");
     }
 }
 
@@ -32,7 +33,7 @@ class Karyawan
 // ============================================================
 class Tetap : Karyawan
 {
-    public double Tunjangan { get; set; }
+    public double Tunjangan;
 
     public Tetap(string nama, double gaji, double tunjangan)
         : base(nama, gaji)
@@ -53,8 +54,8 @@ class Tetap : Karyawan
     public override void InfoKaryawan()
     {
         base.InfoKaryawan();
-        Console.WriteLine($"Tunjangan  : Rp {Tunjangan:N0}");
-        Console.WriteLine($"Gaji Total : Rp {HitungGajiTotal():N0}");
+        Console.WriteLine($"Tunjangan  : Rp {Tunjangan}");
+        Console.WriteLine($"Gaji Total : Rp {HitungGajiTotal()}");
     }
 }
 
@@ -63,7 +64,7 @@ class Tetap : Karyawan
 // ============================================================
 class Kontrak : Karyawan
 {
-    public int Durasi { get; set; } // dalam bulan
+    public int Durasi;
 
     public Kontrak(string nama, double gaji, int durasi)
         : base(nama, gaji)
@@ -235,9 +236,9 @@ class Program
         Perusahaan perusahaan = new Perusahaan();
 
         // --- Buat objek Karyawan ---
-        Manager manager   = new Manager("Elmi Saputra", 15000000, 5000000);
-        Staff staff       = new Staff("Cristiano Ronaldo", 8000000, 2000000);
-        Magang magang     = new Magang("Lionel Messi", 1500000, 3);
+        Manager manager = new Manager("Elmi Saputra", 15000000, 5000000);
+        Staff staff = new Staff("Cristiano Ronaldo", 8000000, 2000000);
+        Magang magang = new Magang("Lionel Messi", 1500000, 3);
         Freelancer freelancer = new Freelancer("Kevin De Bruyne", 5000000, 6);
 
         // --- Tambahkan ke Perusahaan ---

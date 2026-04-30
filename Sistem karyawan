@@ -238,7 +238,7 @@ class Program
         // --- Buat objek Karyawan ---
         Manager manager = new Manager("Elmi Saputra", 15000000, 5000000);
         Staff staff = new Staff("Cristiano Ronaldo", 8000000, 2000000);
-        Magang magang = new Magang("Lionel Messi", 1500000, 3);
+        Magang magang = new Magang("Lionel Messi", 1400000, 3);
         Freelancer freelancer = new Freelancer("Kevin De Bruyne", 5000000, 6);
 
         // --- Tambahkan ke Perusahaan ---
